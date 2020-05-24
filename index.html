@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paxos Viz - NHibiki</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+        }
+        #container, #form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        #form {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <h3>Paxos Visualization By NHibiki</h3>
+        <p>Number of Proposers <input id="nop" value="5"/></p>
+        <p>Number of Acceptors <input id="noa" value="20"/></p>
+        <button id="nos">Start</button>
+    </div>
+    <div id="container"></div>
+    <script src="https://cdn.bootcss.com/d3/5.15.1/d3.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
